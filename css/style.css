@@ -1,0 +1,357 @@
+/* ****** @mixin  ****** */
+/* ****** font-face ****** */
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans.eot);
+  src: url(fonts/OpenSans.eot?#iefix) format(embedded-opentype), url(fonts/OpenSans.woff) format(woff), url(fonts/OpenSans.ttf) format(truetype), url(fonts/OpenSans.svg#open_sans) format(svg);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: FontAwesome;
+  src: url(fonts/fontawesome-webfont.eot?v=4.5.0);
+  src: url(fonts/fontawesome-webfont.eot?#iefix&v=4.5.0) format(embedded-opentype), url(fonts/fontawesome-webfont.woff2?v=4.5.0) format(woff2), url(fonts/fontawesome-webfont.woff?v=4.5.0) format(woff), url(fonts/fontawesome-webfont.ttf?v=4.5.0) format(truetype), url(fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular) format(svg);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(fonts/Quicksand.otf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat.otf);
+}
+@font-face {
+  font-family: "Adam.cg pro";
+  src: url(fonts/Adam.cg_pro.otf);
+}
+@font-face {
+  font-family: Aavantebs;
+  src: url(fonts/aavantebs.ttf);
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3.157em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h3 {
+  font-size: 1.777em;
+}
+
+h4 {
+  font-size: 1.333em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+/* ****** Variables ****** */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+/* ***** for debugging ***** */
+.bug {
+  position: relative;
+}
+
+.bug:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 99%;
+  width: 288.922px;
+  margin-left: -144.961px;
+  margin-top: -19px;
+  padding: 10px 0;
+  content: "!!! Need FIX !!!";
+  font: 700 1.5em "Arial";
+  text-align: center;
+  border: 2px dashed red;
+  color: red;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.row {
+  max-width: 68.1%;
+  margin: 0 auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.article_img {
+  float: left;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 0px 1px black;
+  -moz-box-shadow: 0px 0px 0px 1px black;
+  box-shadow: 0px 0px 0px 1px black;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+body {
+  background: #F6F6F5 url(../img/bg.png);
+}
+
+/* ***** HEADER ***** */
+header {
+  border-top: 5px solid #000;
+}
+header a {
+  font: 400 16px "Crimson Roman";
+  text-decoration: none;
+}
+
+.header_menu-top {
+  float: right;
+}
+.header_menu-top a, .header_menu-top a:visited {
+  color: #000;
+}
+.header_menu-top a:first-child {
+  margin-right: 15px;
+}
+
+.header_logo {
+  margin: 18px 0;
+}
+.header_logo a, .header_logo a:visited {
+  color: #080808;
+  font: 36px "Crimson Roman";
+  text-decoration: none;
+}
+.header_logo a span, .header_logo a:visited span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  float: left;
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  line-height: 50px;
+  background-color: #000;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+.header_bottom {
+  height: 40px;
+  background-color: #000;
+}
+.header_bottom form {
+  position: relative;
+  height: 40px;
+  float: right;
+}
+.header_bottom form * {
+  color: #fff;
+}
+.header_bottom form span {
+  position: absolute;
+  top: 12px;
+  left: -57px;
+}
+.header_bottom form input[type='text'] {
+  width: 243px;
+  height: 25px;
+  margin: 7.5px 0;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px dotted #959595;
+  background-color: #1f1f1f;
+}
+.header_bottom form input[type='submit'] {
+  position: absolute;
+  top: 11px;
+  right: 7px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: url(../img/icon_search.png);
+}
+.header_bottom ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.header_bottom ul li a {
+  line-height: 40px;
+  color: #fff;
+}
+
+/* ***** CONTEINER ***** */
+.content {
+  width: 65.49553%;
+  float: left;
+  margin-right: 28px;
+}
+.content article {
+  margin-top: 42px;
+  border-top: 2px solid #000;
+}
+.content article .article_title {
+  margin: 30px 0;
+  font: 700 20px "arial";
+  text-transform: uppercase;
+}
+.content article .article_about {
+  height: 27px;
+  line-height: 27px;
+  border-top: 1px dotted #000;
+  border-bottom: 1px dotted #000;
+}
+.content article .article_about .article_about-comments {
+  float: right;
+  text-transform: uppercase;
+}
+.content article .article_post {
+  margin-top: 28px;
+}
+.content article .article_post .article_img {
+  margin: 8px 28px 0 0;
+}
+.content article .article_post .article_text {
+  overflow: hidden;
+  line-height: 1.5;
+}
+.content article .article_post .read_more, .content article .article_post .read_more:visited {
+  display: block;
+  color: #BA0808;
+  text-decoration: none;
+  margin-top: 31px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  margin-top: 42px;
+  border-top: 2px solid #000;
+}
+.pagination li {
+  margin-top: 14px;
+  line-height: 23px;
+  display: inline-block;
+}
+.pagination li a, .pagination li a:visited {
+  display: block;
+  color: #fff;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #000;
+  background-color: #000;
+}
+.pagination li .pagination-active, .pagination li a:hover {
+  color: #000 !important;
+  border: 1px dotted #000 !important;
+  background-color: #fff !important;
+}
+
+/* ***** ASIDE ***** */
+aside {
+  width: 31.28767%;
+  float: left;
+}
+
+.block {
+  margin-top: 42px;
+}
+.block .block_name {
+  text-align: center;
+  padding: 7px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+}
+.block .block_post {
+  color: #424242;
+  margin-top: 18px;
+  line-height: 1.2;
+}
+.block .block_post .block_post_img {
+  margin: 3px 16px 0 0;
+}
+.block .block_post .block_post_title {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.block .block_post .block_post_text {
+  overflow: hidden;
+  margin-top: 11px;
+}
+.block table {
+  width: 100%;
+  margin: 0 auto;
+}
+.block table tr td {
+  padding: 6px 0;
+  border-bottom: 1px dotted #424242;
+}
+.block table tr td a, .block table tr td a:visited {
+  color: #424242;
+  text-decoration: none;
+}
+.block table tr td a:nth-child(2n) {
+  margin-left: 20px;
+  color: red;
+}
+
+/* ***** FOOTER ***** */
+footer {
+  height: 400px;
+  margin-top: 47px;
+  background-color: #000;
+}
+footer .block {
+  max-width: 31.28768%;
+  float: left;
+}
+footer .block:nth-child(2) {
+  margin: 42px 3.06848% 0 3.06848%;
+}
+footer .block_name {
+  color: #fff;
+  border-color: #fff !important;
+}
+footer .block_post {
+  line-height: 1.5;
+  color: #9F9F9F !important;
+}
+footer .block_post a, footer .block_post a:visited {
+  color: #fff;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* ***** IMPORTS ***** */

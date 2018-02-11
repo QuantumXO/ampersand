@@ -1,0 +1,193 @@
+@import "compass/css3"
+@import "compass/utilities"
+@import mixin
+
+body
+	background: #F6F6F5 url(../img/bg.png)
+/* ***** HEADER ***** */
+header
+	border-top: 5px solid #000
+	a
+		font: 400 16px 'Crimson Roman'
+		text-decoration: none
+		
+.header_menu-top
+	float: right
+	a,a:visited
+		color: #000
+	a:first-child
+		margin-right: 15px	
+.header_logo
+	margin: 18px 0
+	a,a:visited
+		color: #080808
+		font: 36px 'Crimson Roman'
+		text-decoration: none
+		span
+			display: block
+			width: 50px
+			height: 50px
+			margin-right: 15px
+			float: left
+			text-align: center
+			color: #fff
+			font-size: 48px
+			line-height: 50px
+			background-color: #000
+			@include border-radius(100px)
+.header_bottom
+	height: 40px
+	background-color: #000
+	form
+		position: relative
+		height: 40px
+		float: right
+		*
+			color: #fff
+		span	
+			position: absolute
+			top: 12px
+			left: -57px
+		input[type='text']
+			width: 243px
+			height: 25px
+			margin: 7.5px 0
+			outline: none
+			box-sizing: border-box
+			border: 1px dotted #959595
+			background-color: #1f1f1f
+		input[type='submit']	
+			position: absolute
+			top: 11px
+			right: 7px
+			width: 18px
+			height: 18px
+			cursor: pointer
+			border: none
+			outline: none
+			background: url(../img/icon_search.png)
+	ul
+		li
+			display: inline-block
+			margin-right: 20px
+			a
+				line-height: 40px
+				color: #fff
+	
+/* ***** CONTEINER ***** */	
+.content
+	width: 65.49553%
+	float: left
+	margin-right: 28px
+	article
+		margin-top: 42px
+		border-top: 2px solid #000
+		.article_title
+			margin: 30px 0
+			font: 700 20px 'arial'
+			text-transform: uppercase
+		.article_about
+			height: 27px
+			line-height: 27px
+			border-top: 1px dotted #000
+			border-bottom: 1px dotted #000
+			.article_about-comments
+				float: right
+				text-transform: uppercase
+		.article_post
+			margin-top: 28px
+			.article_img
+				margin: 8px 28px 0 0
+			.article_text
+				overflow: hidden
+				line-height: 1.5
+			.read_more,.read_more:visited
+				display: block
+				color: #BA0808
+				text-decoration: none
+				margin-top: 31px
+				text-transform: uppercase
+.pagination
+	margin-top: 42px
+	border-top: 2px solid #000 
+	li
+		margin-top: 14px
+		line-height: 23px
+		display: inline-block
+		a,a:visited
+			display: block
+			color: #fff
+			width: 21px
+			height: 21px
+			text-align: center
+			text-decoration: none	
+			border: 1px solid #000
+			background-color: #000
+		.pagination-active,a:hover
+			color: #000 !important
+			border: 1px dotted #000 !important
+			background-color: #fff !important		
+
+/* ***** ASIDE ***** */	
+aside
+	width: 31.28767%
+	float: left
+.block
+	margin-top: 42px
+	.block_name
+		text-align: center
+		padding: 7px 0
+		font-weight: 700
+		text-transform: uppercase
+		border-top: 2px solid #000 
+		border-bottom: 1px solid #000 
+	.block_post
+		color: #424242
+		margin-top: 18px
+		line-height: 1.2
+		.block_post_img
+			margin: 3px 16px 0 0
+		.block_post_title
+			font-size: 13px
+			text-transform: uppercase
+		.block_post_text
+			overflow: hidden
+			margin-top: 11px
+	table
+		width: 100%
+		margin: 0 auto
+		tr
+			td		
+				padding: 6px 0
+				border-bottom: 1px dotted #424242
+				a,a:visited
+					color: #424242				
+					text-decoration: none
+				a:nth-child(2n)	
+					margin-left: 20px
+					color: red
+				
+
+/* ***** FOOTER ***** */	
+footer
+	height: 400px
+	margin-top: 47px
+	background-color: #000
+	.block
+		max-width: 31.2876756%
+		float: left
+	.block:nth-child(2)	
+		margin: 42px 3.06848% 0 3.06848%
+	.block_name
+		color: #fff
+		border-color: #fff !important
+	.block_post
+		line-height: 1.5
+		color: #9F9F9F !important
+		a,a:visited
+			color: #fff
+			font-style: italic
+			text-decoration: none
+		
+/* ***** IMPORTS ***** */	
+
